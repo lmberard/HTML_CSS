@@ -1,0 +1,87 @@
+/*
+In order to use SASS I installed the Live Sass Compiler extension in VsCode. 
+In the HTML file there should be the link for the css file that the compiler creates, not the scss.
+Basically SASS is useful for:
+  -> having "variables" or constants. 
+  -> you can nest properties and "include" them in "one box of something particular"
+    for example 
+    div {
+      font{
+        decoration: ; 
+        transform:; 
+        align:; etc..
+      }
+    }
+  -> you can modularize the files and include them. 
+  In order to do that you have to name the file with a "_" at the beginning of the file name so it does not get compiled 
+  and them import it. 
+  -> you can also create "functions" or structure of styles called Mixin
+*/
+
+/* Modularize files: */
+@import "button";
+
+/* Constants:*/
+$backgroundColor: rgb(26, 26, 26);
+$textColor: white;
+
+/* "Functions":*/
+@mixin fontStyle($size, $color) {
+  color: $color;
+  font: $size sans-serif;
+}
+
+html {
+  background: $backgroundColor;
+  @include fontStyle(16px, $textColor);
+}
+
+h1 {
+  color: lightgreen;
+  font: 50px sans-serif;
+}
+
+h2 {
+  color: rgb(111, 179, 173);
+  font: 50px;
+}
+
+.flex-container {
+  display: flex;
+  height: 10%;
+  width: 50%;
+  /*flex-direction: row;
+  flex-wrap: wrap;*/
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+
+  background: rgb(136, 189, 189);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.flex-container div {
+  background: rgb(55, 78, 78);
+  padding: 10px;
+  border: none;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+p {
+  color: white;
+}
+
+xmp {
+  background: grey;
+  width: 50%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

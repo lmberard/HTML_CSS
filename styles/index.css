@@ -1,0 +1,123 @@
+/*
+In order to use SASS I installed the Live Sass Compiler extension in VsCode. 
+In the HTML file there should be the link for the css file that the compiler creates, not the scss.
+Basically SASS is useful for:
+  -> having "variables" or constants. 
+  -> you can nest properties and "include" them in "one box of something particular"
+    for example 
+    div {
+      font{
+        decoration: ; 
+        transform:; 
+        align:; etc..
+      }
+    }
+  -> you can modularize the files and include them. 
+  In order to do that you have to name the file with a "_" at the beginning of the file name so it does not get compiled 
+  and them import it. 
+  -> you can also create "functions" or structure of styles called Mixin
+*/
+/* Modularize files: */
+button {
+  border-radius: 90px;
+  text-align: center;
+  color: white;
+  height: 40px;
+  width: 120px;
+  font: 20px;
+  border: none;
+  margin: 5px;
+}
+
+.buttonOK {
+  background: #6fd16f;
+}
+
+.buttonCancel {
+  background: #ca5545;
+}
+
+.buttonEdit {
+  background: #21b2cc;
+}
+
+.buttonExit {
+  background: #a11c1c;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+}
+
+.buttonMinimize {
+  background: #d8d539;
+  height: 20px;
+  width: 20px;
+}
+
+/* Constants:*/
+/* "Functions":*/
+html {
+  background: #1a1a1a;
+  color: white;
+  font: 16px sans-serif;
+}
+
+h1 {
+  color: lightgreen;
+  font: 50px sans-serif;
+}
+
+h2 {
+  color: #6fb3ad;
+  font: 50px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10%;
+  width: 50%;
+  /*flex-direction: row;
+  flex-wrap: wrap;*/
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  background: #88bdbd;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.flex-container div {
+  background: #374e4e;
+  padding: 10px;
+  border: none;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+p {
+  color: white;
+}
+
+xmp {
+  background: grey;
+  width: 50%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/*# sourceMappingURL=index.css.map */

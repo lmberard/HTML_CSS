@@ -1,0 +1,37 @@
+$buttonTextColor: white;
+
+button {
+  border-radius: 90px;
+  text-align: center;
+  color: $buttonTextColor;
+  height: 40px;
+  width: 120px;
+  font: 20px;
+  border: none;
+  margin: 5px;
+}
+
+.buttonOK {
+  background: rgb(111, 209, 111);
+}
+
+.buttonCancel {
+  background: rgb(202, 85, 69);
+}
+
+.buttonEdit {
+  background: rgb(33, 178, 204);
+}
+
+.buttonExit {
+  background: rgb(161, 28, 28);
+  text-align: center;
+  height: 20px;
+  width: 20px;
+}
+
+.buttonMinimize {
+  background: rgb(216, 213, 57);
+  height: 20px;
+  width: 20px;
+}
