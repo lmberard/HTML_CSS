@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/images/css.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <title>CSS Styling by LB</title>
+    </head>
+
+    <body>
+        <h1> CSS Styling</h1>
+        <link href="/styles/index.css" rel="stylesheet"/>
+        <h2> Buttons: </h2>
+        <div>
+            <button class="buttonOK"> OK </button> 
+            <button class="buttonCancel"> Cancel</button> 
+            <button class="buttonEdit"> Edit </button> 
+            <button class="buttonExit">X</button> 
+            <button class="buttonMinimize">-</button> 
+        </div>
+
+        <h2> Flexboxs: </h2>
+        <div class="flex-container">
+            <div style="flex-grow: 3; order: 1;"> 1 </div>
+            <div style="flex-grow: 3; order: 2;"> 2 </div>
+            <div style="flex-grow: 3; order: 3;"> 3 </div>
+            <div style="flex-grow: 3; order: 4;"> 4 </div>
+            <div style="flex-grow: 3; order: 5;"> 5 </div>
+            <div style="flex-grow: 3; order: 6;"> 6 </div>
+            <div style="flex-grow: 3; order: 7;"> 7 </div>
+            <div style="flex-grow: 3; order: 8;"> 8 </div>
+            <div style="flex-grow: 3; order: 9;"> 9 </div>
+            <div style="flex-grow: 3; order: 10;"> 10 </div>
+            <div style="flex-grow: 3; order: 11;"> 11 </div>
+            <div style="flex-grow: 3; order: 12;"> 12 </div>
+        </div>
+
+        <h2> Grid: </h2>
+        
+        <h2> SASS: </h2>
+        <p>
+            In order to use SASS I installed the Live Sass Compiler extension in VsCode. 
+            In the HTML file there should be the link for the css file that the compiler creates, not the scss.
+        </p>
+        <p>
+            Basically SASS is useful for:
+            <ul>
+                <li>
+                    having "variables" or constants. 
+                </li>
+                <li>
+                    you can nest properties and "include" them in "one box of something particular". For example:
+                        <xmp> 
+div {
+  font{
+    decoration: ; 
+    transform:; 
+    align:; etc..
+    }
+} 
+                        </xmp>
+                        
+                </li>
+                <li>
+                    you can modularize the files and include them. 
+            In order to do that you have to name the file with a "_" at the beginning of the file name so it does not get compiled 
+            and them import it. 
+                </li>
+                <li>
+                    you can also create "functions" or structure of styles called Mixin
+                </li>
+            </ul>
+            
+                
+           
+        </p>
+    
+        
+    </body>
+
+
+</html>
