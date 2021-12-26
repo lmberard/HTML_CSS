@@ -20,6 +20,7 @@ Basically SASS is useful for:
 
 /* Modularize files: */
 @import "button";
+@import "animations";
 
 /* Constants:*/
 $backgroundColor: rgb(26, 26, 26);
