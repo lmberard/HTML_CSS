@@ -1,0 +1,28 @@
+.flex-container {
+  display: flex;
+  height: 10%;
+  width: 50%;
+  /*flex-direction: row;
+    flex-wrap: wrap;*/
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+
+  background: rgb(136, 189, 189);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.flex-container div {
+  background: rgb(55, 78, 78);
+  padding: 10px;
+  border: none;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}

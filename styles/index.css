@@ -54,6 +54,44 @@ button {
   width: 20px;
 }
 
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10%;
+  width: 50%;
+  /*flex-direction: row;
+    flex-wrap: wrap;*/
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  background: #88bdbd;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.flex-container div {
+  background: #374e4e;
+  padding: 10px;
+  border: none;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
 .parent {
   background-color: #0e0e0e;
   height: 200px;
@@ -135,6 +173,46 @@ button {
   }
 }
 
+button:hover {
+  background-color: black;
+}
+
+span {
+  display: block;
+  font-family: monospace;
+  margin: 20px;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 38ch;
+  overflow: hidden;
+  -webkit-animation: typing 2s steps(20) infinite forwards, blink 5s infinite step-end alternate;
+          animation: typing 2s steps(20) infinite forwards, blink 5s infinite step-end alternate;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 /* Constants:*/
 /* "Functions":*/
 html {
@@ -151,44 +229,6 @@ h1 {
 h2 {
   color: #6fb3ad;
   font: 50px;
-}
-
-.flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 10%;
-  width: 50%;
-  /*flex-direction: row;
-  flex-wrap: wrap;*/
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  background: #88bdbd;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-}
-
-.flex-container div {
-  background: #374e4e;
-  padding: 10px;
-  border: none;
-  width: 20px;
-  text-align: center;
-  line-height: 20px;
-  font-size: 20px;
-  margin: 10px;
-  border-radius: 10px;
 }
 
 p {
