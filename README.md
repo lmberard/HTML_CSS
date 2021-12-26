@@ -17,12 +17,12 @@ Basically SASS is useful for:
 
   ```scss
   div {
-  font{
-      decoration: xxx ;
-      transform: xxx;
-      align: xxx ;
-      etc..
-      }
+    font{
+        decoration: xxx ;
+        transform: xxx;
+        align: xxx ;
+        etc..
+        }
   }
   ```
 
